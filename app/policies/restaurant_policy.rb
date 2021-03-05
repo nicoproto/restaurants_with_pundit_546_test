@@ -2,6 +2,8 @@ class RestaurantPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
       scope.all
+      # If I want to show only the ones I own
+      # scope.where(user: user)
     end
   end
 

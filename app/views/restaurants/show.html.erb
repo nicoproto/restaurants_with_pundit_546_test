@@ -10,7 +10,6 @@
   <%= @restaurant.user_id %>
 </p>
 
-
 <% if policy(@restaurant).edit? %>
   <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
 <% end %>
